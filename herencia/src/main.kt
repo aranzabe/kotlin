@@ -18,4 +18,26 @@ fun main(){
     var pa = Pato("Cuaqui")
     println(pa.hacerCaso())
 
+    var miZoo = ArrayList<Animal>()
+    miZoo.add(p)
+    miZoo.add(g)
+    //miZoo.add(pa)//Si descomentas esto dará un error porque la clase del ArrayList es Animal y Pato hereda de Animal2.
+    for(ob in miZoo) {
+        if (ob is Gato){
+            println("Se ha encontrador un gato: " + ob)
+            println(ob.toserBolaPelo())
+        }
+        if (ob is Perro){
+            println("Se ha encontrado un perro: " + ob)
+            println(ob.sacarPaseo())
+        }
+        /*
+         //Si descomentas esto dará un error porque la clase del ArrayList es Animal y Pato hereda de Animal2.
+         if (ob is Pato){
+            println("Se ha encontrado un perro: " + ob)
+            ob.sacarPaseo()
+        }*/
+    }
+
+
 }

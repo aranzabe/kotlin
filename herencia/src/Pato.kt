@@ -15,4 +15,7 @@ class Pato:Animal2,MiInterfaz {
         return "El pato hace CUA"
     }
 
+    override fun toString(): String {
+        return "Pato:{" + super.toString()+ "}"
+    }
 }
