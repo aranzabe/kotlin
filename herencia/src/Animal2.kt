@@ -1,5 +1,9 @@
-//La palabra open la habilita para ser clase base.
-open class Animal { //La clase base hereda de forma implícita de Any (como todas las clases, igualque en Java heredan de Object).
+//Esta clase tendrá métodos abstractos por lo que no se podrá instanciar.
+/*
+Para probar esto podemos hacer que Perro y Gato hereden de Animal2. Comentamos alguna función abstracta de las hijas
+y veremos como me la exige definir, tal y como sucedía en Java.
+ */
+abstract class Animal2 { //La clase base hereda de forma implícita de Any (como todas las clases, igualque en Java heredan de Object).
     var nombre: String = ""
     var raza: String = ""
     var peso: Float = 0.toFloat()
@@ -40,20 +44,11 @@ open class Animal { //La clase base hereda de forma implícita de Any (como toda
     }
 
     /**
-     * La clausula open es necesaria para aquellos métodos que vamos a sobrescribir en las clases hijas.
-     * Con los atributos pasa igual. Si queremos definir atributos que se pueden sobreescribir en las hijas
-     * se pondrá:
-     *     open var loquesea:Int = 0 --> En la clase base/madre.
-     * Y:
-     *     override var loquesea = 18 --> En la clase derivada/hija
+     * En esta segunda clase Animal2, al tener métodos abstractos la convierte en abstracta.
      */
-    open fun hacerCaso():String {
-        return "Animal " + this.nombre + " hace caso."
-    }
+    //abstract fun hacerCaso():String
 
-    open fun hacerRuido():String {
-        return "Animal " + this.nombre + " hace ruido"
-    }
+    //abstract fun hacerRuido():String
 
     override fun toString():String{
         return "Animal{nombre: " + this.nombre + ", edad: " + this.edad + ", peso: " + this.peso + ", raza: " + this.raza + "}"

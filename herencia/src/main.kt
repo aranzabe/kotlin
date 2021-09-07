@@ -15,4 +15,7 @@ fun main(){
     println(g)
     println(g.toserBolaPelo())
 
+    var pa = Pato("Cuaqui")
+    println(pa.hacerCaso())
+
 }
