@@ -1,3 +1,7 @@
+package Animales
+
+import Animales.Animal
+
 class Gato: Animal {
     var lealtadGatuna:Float = 0.toFloat()
 
@@ -31,7 +35,7 @@ class Gato: Animal {
     }
 
     override fun toString(): String {
-        return "Gato:{" + super.toString() + " ,lealtad gatuna: " + this.lealtadGatuna + "}"
+        return "Animales.Gato:{" + super.toString() + " ,lealtad gatuna: " + this.lealtadGatuna + "}"
     }
 
 }

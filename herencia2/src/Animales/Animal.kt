@@ -1,6 +1,8 @@
+package Animales
+
 //La palabra open la habilita para ser clase base.
 //En la clase base definimos un constructor primario.
-open class Animal (var nombre:String){ //La clase base hereda de forma implícita de Any (como todas las clases, igualque en Java heredan de Object).
+open class Animal (var nombre:String){ //La clase base hereda de forma implícita de Any (como todas las clases, igual que en Java heredan de Object).
     var raza: String = ""
     var peso: Float = 0.toFloat()
     var edad: Int = 0
@@ -25,15 +27,15 @@ open class Animal (var nombre:String){ //La clase base hereda de forma implícit
     }
 
     fun vacunar():String {
-        return "Animal " + this.nombre + " vacunado."
+        return "Animales.Animal " + this.nombre + " vacunado."
     }
 
     fun dormir():String {
-        return "Animal " + this.nombre + " durmiendo."
+        return "Animales.Animal " + this.nombre + " durmiendo."
     }
 
     fun comer():String {
-        return "Animal " + this.nombre + " comiendo."
+        return "Animales.Animal " + this.nombre + " comiendo."
     }
 
     /**
@@ -45,14 +47,14 @@ open class Animal (var nombre:String){ //La clase base hereda de forma implícit
      *     override var loquesea = 18 --> En la clase derivada/hija
      */
     open fun hacerCaso():String {
-        return "Animal " + this.nombre + " hace caso."
+        return "Animales.Animal " + this.nombre + " hace caso."
     }
 
     open fun hacerRuido():String {
-        return "Animal " + this.nombre + " hace ruido"
+        return "Animales.Animal " + this.nombre + " hace ruido"
     }
 
     override fun toString():String{
-        return "Animal{nombre: " + this.nombre + ", edad: " + this.edad + ", peso: " + this.peso + ", raza: " + this.raza + "}"
+        return "Animales.Animal{nombre: " + this.nombre + ", edad: " + this.edad + ", peso: " + this.peso + ", raza: " + this.raza + "}"
     }
 }

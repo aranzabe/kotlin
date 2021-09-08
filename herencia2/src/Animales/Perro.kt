@@ -1,3 +1,7 @@
+package Animales
+
+import Animales.Animal
+
 class Perro: Animal {
     var lealtad:Int = 0
 
@@ -30,7 +34,7 @@ class Perro: Animal {
     }
 
     override fun toString(): String {
-        return "Perro:{" + super.toString() + " ,lealtad perruna: " + this.lealtad + "}"
+        return "Animales.Perro:{" + super.toString() + " ,lealtad perruna: " + this.lealtad + "}"
     }
 
 }

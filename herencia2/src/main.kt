@@ -1,3 +1,7 @@
+import Animales.Animal
+import Animales.Gato
+import Animales.Perro
+
 /*
 Este ejemplo es igual que herencia, pero ahora las clases derivadas y base usan constructores primarios.
  */
