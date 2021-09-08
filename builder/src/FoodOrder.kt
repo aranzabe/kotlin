@@ -4,6 +4,11 @@ class FoodOrder private constructor(
     val meat: String?,
     val fish: String?) {
 
+    /*
+    Una data class no es más que una clase que sólo contiene estado y no realiza ninguna operación.
+    La ventaja de utilizar data classes en vez de clases normales es que Kotlin nos aporta una cantidad inmensa de código autogenerado.
+    https://devexperto.com/data-classes-kotlin/
+     */
     data class Builder(
         var bread: String? = null,
         var condiments: String? = null,
