@@ -4,4 +4,5 @@ interface User {
     fun getFullName() = "$name $surname"
     fun status(): String
     fun showAds(): Boolean
+
 }

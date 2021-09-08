@@ -10,4 +10,5 @@ object UserFactory {
             UserType.Premium -> Premium(name = name, surname = surname)
         }
     }
+
 }
