@@ -1,4 +1,17 @@
 fun main(){
+
+    //Listas inmutables: listOf, setOf
+    //Listas mutables: mutableListOf, arrayListOf, mutableSetOf
+
+    //Pedir por teclado
+    /*var palabra:String
+    palabra = readLine().toString()
+    println(palabra)
+    var entero:Int
+    entero = readLine().toString().toInt()
+    println(entero)*/
+
+    //******************** Listas **************************
     var lista = ArrayList<Int>(4)
     //La capacidad inicial no determina una capacidad final.
     for (i in 1..10) {
@@ -27,17 +40,28 @@ fun main(){
         fila3.add(0)
     }
     matriz.add(fila3)
-
-    //MIRAR recorridos de listas.
-
     rellenar(matriz)
     mostrar(matriz)
 
-    var palabra:String
-    palabra = readLine().toString()
-    println(palabra)
-    var entero:Int
-    entero = readLine().toString().toInt()
-    println(entero)
 
+    //******************** Conjuntos ***********************
+    var conj = setOf<Int>(1,2,3,3,4,5,6,7,8,9,9,0,12,2) //Veremos que solo se almacenan elementos distintos.
+    println(conj)
+    /*println("Elementos del conjunto.")
+    for (e in conj){
+        println(e)
+    }*/
+
+    //******************* Mapas/Tablas Hash ***********************
+    var mapaNumeros = mapOf<String, Int>("cod1" to 1, "cod2" to 2, "cod3" to 3, "cod4" to 4) //Mapa inmutable
+    println(mapaNumeros)
+
+    var mapaNumeros2 = mutableMapOf<String, Int>("cod1" to 1, "cod2" to 2, "cod3" to 3, "cod4" to 4) //Mapa inmutable
+    mapaNumeros2["cod5"] = 5
+    mapaNumeros2.put("cod6",5)
+    println(mapaNumeros2)
+    println("El elemento dos es: " + mapaNumeros2["cod2"])
+    println("El elemento tres es ${mapaNumeros2["cod3"]}")
+    mapaNumeros2.remove("cod6")
+    println(mapaNumeros2)
 }
