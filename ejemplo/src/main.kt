@@ -36,27 +36,6 @@ fun main() {
         println("Good evening.")
     }
 
-    var cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
-    for (x in cars) {
-        println(x)
-    }
-    if ("Volvo" in cars) {
-        println("Ok")
-    } else {
-        println("No encontrado")
-    }
-
-    for (nums in 5..15) {
-        println(nums)
-    }
-
-    var nom: String = "Fer"
-    var edad: Int = 47
-    myFunction(nom, edad, cars)
-    for (x in cars) {
-        println(x)
-    }
-
     var mes = 4
     when(mes){
         in 3..5 -> println("Primavera")
@@ -73,6 +52,42 @@ fun main() {
         else -> "Nada"
     }
     println("$estacion")
+
+    //**************** vectores *********************
+
+    var cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+    for (x in cars) {
+        println(x)
+    }
+    if ("Volvo" in cars) {
+        println("Ok")
+    } else {
+        println("No encontrado")
+    }
+    var nom: String = "Fer"
+    var edad: Int = 47
+    myFunction(nom, edad, cars)
+    for (x in cars) {
+        println(x)
+    }
+
+    //Esto llena los datos del vector con valores 0
+    //var vector = IntArray(5)
+    //Si se define como Array tendríamos que usar una función lambda de relleno.
+    var vector:Array<Int> = Array(5,{i -> i + 1})
+    for(i in vector){
+        println("------- $i ----------")
+    }
+
+    for (nums in 5..15) {
+        println(nums)
+    }
+
+
+
+
+    //********************** Matrices ***************************
+
 
     //Usando una función lambda (funciones anónimas). Si cambiamos el 1 por 0, 2, 3... O incluso el + por *, veremos la diferencia.
 /*    var filas:Array<Int>  = Array(5, { i -> i + 1 })
@@ -98,6 +113,8 @@ fun main() {
         }
         println()
     }
+
+
 
     /*var cont:Int = 0
     for (i in 0..m.size - 1) { //Recorremos fila a fila
