@@ -1,5 +1,3 @@
-import kotlin.reflect.jvm.internal.impl.protobuf.Internal
-
 fun main(){
     var lista = ArrayList<Int>(4)
     //La capacidad inicial no determina una capacidad final.

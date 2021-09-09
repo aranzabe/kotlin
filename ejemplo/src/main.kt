@@ -57,6 +57,23 @@ fun main() {
         println(x)
     }
 
+    var mes = 4
+    when(mes){
+        in 3..5 -> println("Primavera")
+        in 6..8 -> println("Verano")
+        in 9..11 -> println("Otoño")
+        in 1..2 -> println("Invierno")
+    }
+    mes = 9
+    var estacion = when(mes){
+        in 3..5 -> "Primavera"
+        in 6..8 -> "Verano"
+        in 9..11 -> "Otoño"
+        in 1..2 -> "Invierno"
+        else -> "Nada"
+    }
+    println("$estacion")
+
     //Usando una función lambda (funciones anónimas). Si cambiamos el 1 por 0, 2, 3... O incluso el + por *, veremos la diferencia.
 /*    var filas:Array<Int>  = Array(5, { i -> i + 1 })
     var cols:Array<Int> = Array(4, {j -> 0})*/
