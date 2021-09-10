@@ -11,7 +11,12 @@ fun pedirPosicion(t:Tablero):Int {
     return pos
 }
 
+fun generarPosicion(t:Tablero):Int = Random.nextInt(0, t.tamTablero())
+
+
+
 fun main(){
+
     var t = Tablero(10,3)
     var pos:Int
     var qhp:Int
@@ -23,7 +28,11 @@ fun main(){
     println(t)
     while(!t.todasCazadas() && intentos > 0){
         print("Posición donde golpear: ")
-        pos = pedirPosicion(t)
+        //pos = pedirPosicion(t)
+        pos = generarPosicion(t)
+        println("La máquina elige la posición: $pos")
+        //delay(1, TimeUnit.SECONDS)
+        Thread.sleep(1000) //Funciona la instrucción Java
         intentos--
         qhp = t.darManotazo(pos)
         if (qhp == 0){
