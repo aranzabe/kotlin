@@ -23,4 +23,16 @@ fun main(){
 
     println(p4)
     println(p5)
+
+    var p6 = PersonaBuilder.Builder().
+        nombre("DAM2").
+        build();
+    println(p6)
+
+    var p7 = PersonaBuilder.Builder().
+        nombre("DAM2 Persona 7").
+        edad(30).
+        build();
+    println(p7)
+    println("Personas creadas con buider ${PersonaBuilder.getCount()}")
 }
