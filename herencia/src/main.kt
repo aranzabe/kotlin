@@ -17,6 +17,7 @@ fun main(){
 
     var pa = Pato("Cuaqui")
     println(pa.hacerCaso())
+    println("Pato haciendo ruido: " + pa.hacerRuido())
 
     var miZoo = ArrayList<Animal>()
     miZoo.add(p)
