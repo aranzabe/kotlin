@@ -3,7 +3,7 @@ Para probar esta clase, comentamos de Animal2 los métodos abstractos: veremos c
 se me exige implementar los métodos de la interfaz.
  */
 class Pato:Animal2,MiInterfaz {
-
+    override val valor: Int = 12
     constructor(nombre: String) : super(nombre)
     constructor(nombre: String, edad:Int) : super(nombre, edad)
 

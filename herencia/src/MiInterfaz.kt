@@ -4,8 +4,11 @@ Las interfaces también pueden tener datos.
  */
 interface MiInterfaz {
     fun hacerCaso():String
-    fun hacerRuido():String
+    fun hacerRuido():String{
+        return ""
+    }
     /*
     Pueden tener un cuerpo por defecto, opcional.
      */
+    val valor:Int
 }
