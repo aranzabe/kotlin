@@ -12,4 +12,7 @@ fun main(){
         println("Show ads: ${showAds()}")
     }
 
+    println("Normal: $normal")
+    println("Premium: $premium")
+
 }
