@@ -54,7 +54,9 @@ fun main(){
     }
 
     //Print an Array using standard library Arrays (import java.util.Arrays)
-    var vef:Array<Int> = Array<Int>(4,{9});
+    var vef:Array<Int> = Array<Int>(4,{x  -> x + 1});
+    println("---------------")
+    //Array(10, { (it + 1) * 2 }).forEach { print("$it ") }
     println(Arrays.toString(vef))
 
     var vec = Array<Int>(4,{i -> i})
@@ -81,5 +83,12 @@ fun main(){
         intArrayOf(3, 4),
         intArrayOf(5, 6, 7))
     matriz[1][0]=108;
+    for(fila in matriz){
+        for(i in 0..fila.size-1){
+            print(fila[i])
+            print(" ")
+        }
+        println()
+    }
     println(Arrays.deepToString(matriz))
 }

@@ -2,7 +2,9 @@ fun main(){
 
     //Listas inmutables: listOf, setOf
     //Listas mutables: mutableListOf, arrayListOf, mutableSetOf
-
+    var laquesa = setOf(1,2,2,2,4,5,6,6)
+    print(laquesa)
+    var AL = Array(3, {j -> j + 2}).toCollection(ArrayList())
     //Pedir por teclado
     /*var palabra:String
     palabra = readLine().toString()
@@ -13,10 +15,13 @@ fun main(){
 
     //******************** Listas **************************
     var lista = ArrayList<Int>(4)
+    var lios = arrayListOf<Int>(2,4,6)
+
     //La capacidad inicial no determina una capacidad final.
     for (i in 1..10) {
         lista.add(i)
     }
+
     lista[3] = 444
     lista.set(7, 888)
     for(x in lista){
@@ -29,7 +34,7 @@ fun main(){
     var matriz:ArrayList<ArrayList<Int>> = ArrayList()
     //var fila1:ArrayList<Int> = ArrayList(3)
     //var fila1 = arrayListOf<Int>(3)
-    var fila1 = Array(3, {j -> 0}).toCollection(ArrayList()) //Recuerda repasar la inicialización de los arrays con funciones lambdas anónimas
+    var fila1 = Array(3, {j -> j + 1}).toCollection(ArrayList()) //Recuerda repasar la inicialización de los arrays con funciones lambdas anónimas
                                                                  //para definir el arraylist en función de un array normal.
     matriz.add(fila1)
     //var fila2:ArrayList<Int> = ArrayList(3)

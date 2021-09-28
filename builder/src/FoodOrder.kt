@@ -9,13 +9,17 @@ class FoodOrder private constructor(
     La ventaja de utilizar data classes en vez de clases normales es que Kotlin nos aporta una cantidad inmensa de código autogenerado.
     https://devexperto.com/data-classes-kotlin/
      */
-    data class Builder(
+    class Builder(
         var bread: String? = null,
         var condiments: String? = null,
         var meat: String? = null,
         var fish: String? = null) {
 
-        fun bread(bread: String) = apply { this.bread = bread }
+        fun bread(bread: String):Builder
+            {
+                this.bread = bread
+                return this
+            }
         fun condiments(condiments: String) = apply { this.condiments = condiments }
         fun meat(meat: String) = apply { this.meat = meat }
         fun fish(fish: String) = apply { this.fish = fish }
