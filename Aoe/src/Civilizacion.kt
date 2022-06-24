@@ -1,5 +1,5 @@
 class Civilizacion {
-    private var nombre:String = ""
+    var nombre:String = ""
     var monarca:String = ""
     var almacenOro:Int = 0
     var almacenPiedra:Int = 0
