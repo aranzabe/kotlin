@@ -53,6 +53,11 @@ fun main(){
         println("No lo tienen")
     }
 
+    //Diferencia entre isEmpty e isBlank
+    println ("   ".isEmpty())
+    println("   ".isBlank())
+
+
     //Print an Array using standard library Arrays (import java.util.Arrays)
     var vef:Array<Int> = Array<Int>(4,{x  -> x + 1});
     println("---------------")

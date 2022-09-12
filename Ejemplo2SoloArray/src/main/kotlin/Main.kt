@@ -70,9 +70,6 @@ fun main(args: Array<String>) {
         println()
     }
 
-    //Diferencia entre isEmpty e isBlank
-    println ("   ".isEmpty())
-    println("   ".isBlank())
 
 
 
