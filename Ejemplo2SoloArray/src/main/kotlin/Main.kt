@@ -47,4 +47,10 @@ fun main(args: Array<String>) {
 
     rellenarMatriz(ma2,99)
     mostrarMatriz(ma2)
+
+
+    //Diferencia entre isEmpty e isBlank
+    println ("   ".isEmpty())
+    println("   ".isBlank())
+
 }
