@@ -1,4 +1,17 @@
 fun main(args: Array<String>) {
+
+    var vecChar = charArrayOf('a','b','c')
+    var vecInt = intArrayOf(2,3,45,6)
+    vecInt[2] = 12
+
+    for (i in vecInt.indices) {
+        println("vecInt[${i}]=${vecInt[i]}")
+    }
+
+
+    var vecBoolean = booleanArrayOf(true, false)
+
+
     var v: Array<Int> = Array<Int>(4) { i -> i + 1 }   //int [] v = new v[4];
     var m: Array<String> = Array(3) { "" }    //String m[] = new String[4];
 
@@ -45,12 +58,22 @@ fun main(args: Array<String>) {
         println()
     }
 
+
     rellenarMatriz(ma2,99)
     mostrarMatriz(ma2)
 
+    println("Escribiendo con lambdas")
+    ma2.forEach {
+        it.forEach {
+            print("$it ")
+        }
+        println()
+    }
 
     //Diferencia entre isEmpty e isBlank
     println ("   ".isEmpty())
     println("   ".isBlank())
+
+
 
 }
