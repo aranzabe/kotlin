@@ -26,10 +26,11 @@ fun main(){
 
     var numFinal = 2
     try {
+         print("Dame un número: ")
          numFinal = readLine()!!.toInt()
     }
     catch (e:Exception){
-        println("Error: '${e.message}'")
+        println("Error, se esperaba un número entero: '${e.message}'")
     }
 
     cont = 1
@@ -44,8 +45,9 @@ fun main(){
         1,3 -> "Impares"
         else -> "Indeterminado"
     }
-
     println(resultado)
 
 
+    val alea = (Math.random() * 4).toInt()
+    println(alea)
 }
