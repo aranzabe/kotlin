@@ -62,6 +62,7 @@ fun main(args: Array<String>) {
     rellenarMatriz(ma2,99)
     mostrarMatriz(ma2)
 
+
     println("Escribiendo con lambdas")
     ma2.forEach {
         it.forEach {
