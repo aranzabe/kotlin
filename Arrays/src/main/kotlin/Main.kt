@@ -25,6 +25,10 @@ fun main(args: Array<String>) {
         println("****")
     }
 
+    v.forEach { elemento ->
+        print("${elemento}  ")
+        println("****")
+    }
 
     //******************************************************************************
 
