@@ -1,19 +1,19 @@
-class Sith (n: String, m: Int) : Metodos, Personaje(n, m) {
-    var maldad:Int = 0
+class Sith (n: String, m: Int, var maldad:Int = 0) : Metodos, Personaje(n, m) {
+
+    companion object {
+        var ESTSITH = 20
+        val pe = Personaje.estaticos
+    }
 
     init{
         this.nombre = "Darth: "
-    }
-    constructor(n:String, m:Int, ma:Int):this(n,m){
-        this.nombre = this.nombre + n
-        this.maldad = ma
     }
 
     override fun pelearSable():String {
         return "Sith " + this.nombre + " peleando"
     }
 
-    override fun preguntaAlvaro(): Int {
+    override fun otroMetodo(): Int {
         return 0
     }
 

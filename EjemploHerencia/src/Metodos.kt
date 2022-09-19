@@ -1,5 +1,5 @@
 interface Metodos {
     fun pelearSable():String
-    fun preguntaAlvaro():Int
+    fun otroMetodo():Int
     //var atrInterfaz:String
 }

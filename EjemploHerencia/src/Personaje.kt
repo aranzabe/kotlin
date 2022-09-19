@@ -8,6 +8,10 @@ open class Personaje {
         this.midiclorianos = m
     }
 
+    companion object estaticos {
+        open var N:Int = 10
+    }
+
     //abstract fun pelearSable():String
 
 

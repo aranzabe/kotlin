@@ -49,8 +49,8 @@ fun wololo(m: Mina, esp: Civilizacion, biz: Civilizacion): Boolean {
 fun main(args: Array<String>) {
     var t: Int
     var codAld: Int
-    val esp = factoriaCivilizacion(Tipos.Español)
-    val biz = factoriaCivilizacion(Tipos.Bizantino)
+    val esp = Factoria.factoriaCivilizacion(Tipos.Español)
+    val biz = Factoria.factoriaCivilizacion(Tipos.Bizantino)
     var ald: Aldeano
     val mina:Mina = Mina()
     println(esp)

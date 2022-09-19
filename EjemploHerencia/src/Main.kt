@@ -24,4 +24,13 @@ fun main(){
             println(pers.serMalotes())
         }
     }
+
+    var unJedi = al.get(0) as Jedi //Casting duro
+    println(unJedi.empalago)
+
+    println("Valor de la variable estática desde personaje: ${Personaje.N}")
+    println("Valor de la variable estática desde Sith: ${Sith.pe.N}")
+    println("Variable estática propia de los Sith: ${Sith.ESTSITH}")
+    Sith.pe.N = 9999
+    println("Acceso a la variable estática común desde los Jedi: ${Jedi.pe.N}")
 }

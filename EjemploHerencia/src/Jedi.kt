@@ -1,19 +1,24 @@
-class Jedi(n: String, m: Int) : Metodos,  Personaje(n, m) {
+class Jedi :  Personaje, Metodos {
     var empalago:Int = 0
+
+    companion object{
+        val pe = Personaje.estaticos
+    }
+
+    constructor(n:String , m:Int , em:Int ) : super(n,m) {
+        this.empalago = em
+    }
 
     init{
         this.nombre = "Caballero: "
     }
-    constructor(n:String, m:Int, em:Int):this(n,m){
-        this.nombre = this.nombre + n
-        this.empalago = em
-    }
+
 
     override fun pelearSable():String {
         return "Jedi " + this.nombre + " peleando"
     }
 
-    override fun preguntaAlvaro(): Int {
+    override fun otroMetodo(): Int {
         return 0
     }
 
